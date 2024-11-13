@@ -1,0 +1,85 @@
+echo jishan
+
+
+echo "jishan Mulani"
+
+
+==============================
+
+
+
+name='jishan'
+
+
+echo the result is $nam
+
+
+
+echo $(hostname)
+
+
+
+============================
+
+readonly variable
+
+a=5
+
+a=10
+
+echo $a  #10
+
+readonly b=50
+
+b=100
+
+echo $b   #50
+
+
+===============
+
+my_arr=(1 abc p "Hey Hello" 'nice one')
+
+
+
+echo $my_arr    #1
+
+echo value at 2nd index is ${my_arr[2]}
+
+
+echo all values in array are ${my_arr[*]}
+
+#Length of an array
+#
+#
+
+echo "lenght of my_arr is ${#my_arr[*]}"
+
+
+echo "values from 2-4 are ${my_arr[*]:2:3}"
+
+# Adding new values in an array
+#
+my_arr+=(new1 new2)
+
+
+echo ${my_arr[*]}     #1 abc p Hey Hello nice one new1 new2
+
+
+================
+
+
+key value pair
+
+declare -A arr
+
+arr=([name]=jishan [age]=26 [city]="pune MH")
+
+
+
+echo "name is ${arr[name]}"
+
+echo "City is ${arr[city]}"
+
+
+=====================
