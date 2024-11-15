@@ -1,0 +1,71 @@
+====string operations
+
+
+#!/bin/bash
+#
+#
+ss="Hey hi how are you Jishan"
+
+
+#Length
+#
+echo "Length of ss is------${#ss}"
+
+
+#Upper Case
+#
+echo "Upper Case----${ss^^}"
+
+#Lower Case
+#
+echo "Lower case----${ss,,}"
+
+#replace
+#
+echo "${ss/Jishan/Heena}"
+
+
+#Slice
+#
+echo "sliced string is ----${ss:4:2}"
+
+
+=============input
+
+
+#!/bin/bash
+#
+#
+read name
+
+echo "your name is----$name"
+
+
+read -p "Enter your name" name
+
+echo "your name is ----$name"
+
+
+===========Arithmetic operations
+
+#!/bin/bash
+#
+#
+x=10
+y=2
+
+let sum=$x+$y
+
+let sub=$x-$y
+
+echo "sum is----$sum"
+
+echo "sub is ---$sub"
+
+echo "mul is $(($x*$y))"
+
+echo "div is $(($x/$y))"
+
+
+=============
+
